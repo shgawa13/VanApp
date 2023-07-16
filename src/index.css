@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.van-detail-container {
+  padding: 27px;
+}
+
+.van-detail-container .back-button {
+  color: black;
+  text-decoration: none;
+}
+
+.van-detail-container .back-button:visited {
+}
+
+.van-detail-container .back-button span {
+  text-decoration: underline;
+}
+
+.van-detail {
+  display: flex;
+  flex-direction: column;
+  color: #f0f0f0;
+}
+
+.van-detail img {
+  border-radius: 5px;
+  margin-block: 47px;
+}
+
+.van-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.van-detail > i {
+  align-self: flex-start;
+}
+
+.van-detail .van-price {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.van-detail .van-price span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.van-detail .link-button {
+  background-color: #ff8c38;
+  color: white;
+  font-size: 1.125rem;
+}
+
+footer {
+  background-color: #161616;
+  color: #aaaaaa;
+  height: 74px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 500;
+}
+
+a.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #161616;
+}
+
+.host-van-link-wrapper {
+  color: unset;
+  text-decoration: unset;
+}
+
+.host-vans-list {
+  padding-inline: 26px;
+}
+
+.host-vans-title {
+  padding-inline: 26px;
+}
+
+.host-van-single {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.277);
+  margin-bottom: 15px;
+  padding-block: 18px;
+  padding-left: 24px;
+}
+
+.host-van-single > img {
+  height: 70px;
+  border-radius: 5px;
+  margin-right: 17px;
+}
+
+.host-van-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-block: 10px;
+}
+
+.host-van-info p {
+  margin-block: 10px;
+}
+
+.host-van-detail-layout-container {
+  background-color: rgba(255, 255, 255, 0.277);
+  padding: 24px;
+  margin: 30px 26px;
+}
+
+.host-van-detail {
+  display: flex;
+  align-items: center;
+}
+
+.host-van-detail > img {
+  height: 160px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.host-van-detail-info-text > h3 {
+  margin-top: 24px;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.host-van-detail-info-text > h4 {
+  font-size: 20px;
+  margin-block: 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 27px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-form > input {
+  border: 1px solid rgba(209, 213, 219);
+  height: 40px;
+  text-indent: 10px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  font-weight: 400;
+}
+
+.login-form > input:focus {
+  outline: none;
+}
+
+.login-form > input:first-of-type {
+  border-radius: 6px 6px 0px 0px;
+}
+
+.login-form > input:last-of-type {
+  border-radius: 0px 0px 6px 6px;
+  border-top: none;
+}
+
+.login-form > button {
+  background-color: #ff8c38;
+  border: none;
+  border-radius: 6px;
+  height: 55px;
+  margin-top: 22px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
